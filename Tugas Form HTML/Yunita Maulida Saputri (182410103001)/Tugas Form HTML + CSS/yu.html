@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>form Login</title>
+    <style>
+        .body {
+            background-color: #eee;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-box {
+            border-radius: 10px 10px 10px 10px;
+            background: #fff;
+            padding: 30px;
+            width: 45%;
+            max-width: 450px;
+            position: relative;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .icon {
+            width: 100px;
+            height: 100px;
+        }
+
+        .btn {
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff
+        }
+
+        .btn:hover {
+            color: #fff;
+            background-color: #0069d9;
+            border-color: #0062cc
+        }
+
+        input {
+            background-color: #f6f6f6;
+            border: none;
+            color: #0d0d0d;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            /* display: inline-block; */
+            font-size: 16px;
+            margin-bottom: 20px;
+            width: 85%;
+        }
+
+        button {
+            background-color: #3ab58b;
+            border: none;
+            color: white;
+            padding: 10px 60px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 13px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <nav class="container">
+        <div class="form-box">
+            <form>
+                <h4>Login</h4>
+                <img src="man.png" class="icon">
+                <p>Username</p>
+                <input type="text" name="Usename" placeholder="Masukkan username" class="form">
+                <p>Password</p>
+                <input type="Password" name="Password" placeholder="Masukkan password" class="form">
+                <button class="btn">Masuk</button>
+            </form>
+        </div>
+        <div class="form-box">
+            <form>
+                <h4>Pendaftaran</h4>
+                <img src="man.png" class="icon">
+                <p>Username</p>
+                <input type="text" placeholder="Masukkan username" class="form">
+                <p>Email</p>
+                <input type="email" placeholder="Masukkan username" class="form">
+                <p>Password</p>
+                <input type="Password" placeholder="Masukkan password" class="form">
+                <button class="btn">Daftar</button>
+            </form>
+        </div>
+    </nav>
+</body>
+
+</html>
