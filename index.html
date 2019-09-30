@@ -1,178 +1,129 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title> index </title>
-		<style type="text/css">
-			body{
-				background-color: #E1E8ED;
-				background-size: auto;
-			}
+<html lang="en">
+   <head>
+      <title>Flowersh-Home</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+<body>
 
-			.Box{
-				width: 70%;
-				min-width: 500px;
-				max-width: 1000px;
-				max-height: 700px;
-				margin: 400px 50% 0px 50%;
-				border: 2px solid #59ACAF;
-				border-radius: 15px;
-				box-shadow: 5px 5px 50px -10px black;
-				transform: translate(-50%,-50%);
-				background-color: #1F484D;
-				overflow: hidden;
-			}
+<!--  Header  -->
+   <a href="#Modal"> Login </a>
 
-			.Profile1{
-				width: 50%;
-				background: none;
-				text-align: center;
-				float: left;
-				padding-bottom: 2%;
-			}
+   <div class="Modal_Login_Overlay" id="Modal">
+      <a href="#"></a>
+      <div class="Modal_Login_Box">
+         <a href="#" class="Modal_Close">&times;</a>
+         <div class="Modal_Login_Content">
+            <LABEL> LOGIN </LABEL></br>
+            <div class="Input_Field_Box">
+               <input type="text" placeholder="Username..."></br>
+            </div>
+            <div class="Input_Field_Box">
+               <input type="password" placeholder="Password..."></br>
+            </div>
+            <a href="#Log-in"><input type="button" class="Login-btn" name="Log-in" value="Log in"></a></br>
+            <a href="#Sign-in"><input type="button" class="Sign-in-btn" name="Sign-in" value="Sign in"></a>
+         </div>
+      </div>
+   </div>
 
-			.Profile2{
-				width: 50%;
-				background: none;
-				text-align: center;
-				float: left;
-				padding-bottom: 2%;
-			}
+   <div class="Header">
+      <div class="Head-Left">
+         <h1>
+            Logo
+         </h1>
+      </div>
+      <div class="Head-Center">
+         <h1>
+            New Arrival
+         </h1>
+      </div>
+      <div class="Head-Right">
+         <h3>
+            Flowersh Account
+         </h3>
+      </div>
+   </div>
 
-			.Texts{
-				color: white;
-				font-size: 22px;
-				margin: 2px;
-			}
+<!--  Navigation Bar  -->
+   <div class="Navigation_Bar">
+      <div class="Nav-Bar-Content">
+         <div class="Nav-Bar-Btn">
+            <a href="#">Home</a>
+         </div>
+         <div class="Nav-Bar-Btn">
+            <a href="#">Catalog</a>
+         </div>
+         <div class="Nav-Bar-Btn">
+            <a href="#">About</a>
+         </div>
+         <div class="Nav-Bar-Btn">
+            <a href="#">Blog</a>
+         </div>
+         <div class="Nav-Bar-Btn">
+            <a href="#">Contact</a>
+         </div>
+         <div class="Nav-Bar-Cart">
+            <a href="#">Cart</a>
+         </div>
+         <div class="Nav-Bar-Account">
+            <a href="#">Account</a>
+         </div>
+      </div>
+   </div>
 
-			.linkform a{
-				color: white;
-			}
+<!--  Container  -->
+   <div class="Container">
+      <div class="Side-Bar">
 
-			.linkform a:hover{
-				color: #1F181D;
-				background-color: #1F888D;
-				border: 2px solid #1F888D;
-				border-radius: 10px;
-				transition				:ease all 0.2s;
-				-webkit-transition		:ease all 0.2s;
-			}
+      </div>
+      <div class="Wrap">
 
-			.fpbx{
-				width: 140px;
-				height: 140px;
-				margin: 10% 50% 10% 50%;
-				transform: translate(-50%,0%);
-				border: 5px solid #1F888D;
-				-webkit-border-radius	: 100%;
-			}
+      </div>
+      <div class="Product_List">
+         
+      </div>
+   </div>
+   <div class="pagination">
+      <a href="#"> &raquo; </a>
+      <a href="#" class="active-page"> 1 </a>
+      <a href="#Product_List_Page_2"> 2 </a>
+      <a href="#Product_List_Page_3"> 3 </a>
+      <a href="#Product_List_Page_4"> 4 </a>
+      <a href="#Product_List_Page_5"> 5 </a>
+      <a href="#Product_List_Page_6"> 6 </a>
+      <a href="#"> &raquo; </a>
+   </div>
 
-			.fp{
-				border: 2px solid white;
-				width: 100px;
-				height: 100px;
-				margin-top: 50%;
-				transform: translate(0%,-50%);
-				-webkit-border-radius	: 100%;
-				transition				:ease all 0.2s;
-				-webkit-transition		:ease all 0.2s;
-			}
+<!--  Flowersh Fixed Bottom-->
+   <div class="Side-Box">
+      <div class="Side-Box-Content">
+         <p> <a href="#">Flowersh</a> </p>
+         <p> Alamat Toko Google Map </p>
+         <p> No Telepon </p>
+         <p> Email </p>
+      </div>
+   </div>
 
-			.fp:hover{
-				transform: scale(1.25) translate(0%,-40%);
-			}
-
-		</style>
-	</head>
-	<body>
-		<div class="Box">
-			<div class="Profile1">
-				<div class="fpbx">
-					<a href="https://www.instagram.com/yunitamaulidasaputri/" target="_blank"> <img src="I1.jpg" class="fp"> </a>
-				</div>
-				<table align="center">
-					<tr>
-						<td width="20%">
-							<div class="Texts">
-								<p> Nama </p>
-							</div>
-						</td>
-						<td width="70%">
-							<div class="Texts">
-								<p> Yunita Maulida Saputri </p>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td width="20%">
-							<div class="Texts">
-								<p> NIM </p>
-							</div>
-						</td>
-						<td width="70%">
-							<div class="Texts">
-								<p> 182410103001 </p>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td width="20%">
-							<div class="Texts">
-								<p> Link </p>
-							</div>
-						</td>
-						<td width="70%">
-							<div class="Texts">
-								<p class="linkform"> <a href="https://github.com/Yunitamaulida/Yunitamaulida.github.io/tree/master/Tugas%20Form%20HTML/Yunita%20Maulida%20Saputri%20(182410103001)" target="_blank""> Link Tugas Form </a> </p>
-							</div>
-						</td>
-					</tr>
-				</table>
-			</div>
-
-			<div class="Profile2">
-				<div class="fpbx">
-					<a href="https://www.instagram.com/fl_amrd/" target="_blank"> <img src="I2.jpg" class="fp"> </a>
-				</div>
-				<table align="center">
-					<tr>
-						<td width="20%">
-							<div class="Texts">
-								<p> Nama </p>
-							</div>
-						</td>
-						<td width="70%">
-							<div class="Texts">
-								<p> Muhammad Faisal Amruddin </p>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td width="20%">
-							<div class="Texts">
-								<p> NIM </p>
-							</div>
-						</td>
-						<td width="70%">
-							<div class="Texts">
-								<p> 182410103012 </p>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td width="20%">
-							<div class="Texts">
-								<p> Link </p>
-							</div>
-						</td>
-						<td width="70%">
-							<div class="Texts">
-								 <p class="linkform"> <a href="https://github.com/Yunitamaulida/Yunitamaulida.github.io/tree/master/Tugas%20Form%20HTML/Muhammad%20Faisal%20Amruddin%20(182410103012)" target="_blank"> Link Tugas Form </a> </p>
-							</div>
-						</td>
-					</tr>
-				</table>
-			</div>
-		</div>
-	</body>
+<!--  Footer  -->
+   <div class="Footer">
+      <div class="Foot-Left">
+         <h2>
+            Motto + Social Media
+         </h2>
+      </div>
+      <div class="Foot-Center">
+         <h2>
+            Menu
+         </h2>
+      </div>
+      <div class="Foot-Right">
+         <h2>
+            Help
+         </h2>
+      </div>
+   </div>
+</body>
 </html>
