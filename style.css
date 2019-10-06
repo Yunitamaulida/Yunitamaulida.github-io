@@ -1,0 +1,335 @@
+
+/* Flowers CSS */
+/*
+z-index max 10;
+display: block;
+width;
+height;
+margin;
+padding;
+background;
+border;
+border-radius;
+position;
+top,left,right,bottom;
+transform;
+overflow;
+box-shadow;
+float;
+opacity;
+visibility;
+
+color;
+font-size: 18px;
+
+transition;
+
+color pallete
+A     
+B     
+C     
+D     
+E     
+F     
+G     
+H     
+I     
+J     
+
+*/
+
+body
+{
+   width: auto;
+   background-color: #BBBBBB;
+   width: 100%;
+   font-family: sans-serif;}
+
+
+.flowershlogo
+{
+   width: 300px;
+}
+
+
+/*--                             Navigation bar          --*/
+.Navigation_Bar
+{
+   width: 100%;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   background-color: blue;
+   border: 1px solid black;}
+
+.Nav-Bar-Content
+{
+   width: 65%;
+   margin-left: 33%;
+   border: 1px solid black;
+   overflow: hidden;}
+
+.Nav-Bar-Btn
+{
+   width: 12%;
+   margin: 5px;
+   padding: 5px;
+   background-color: #88888899;
+   border: 1px solid black;
+   overflow: hidden;
+   float: left;
+
+   text-align: center;}
+
+.Nav-Bar-Btn a
+{
+   color: #222222;
+   text-decoration: none;}
+
+.Nav-Bar-Cart
+{
+   width: 7%;
+   height: width;
+   margin: 5px 5px 5px 5%;
+   border: 5px solid yellow;
+   overflow: hidden;
+   float: left;}
+
+.Nav-Bar-Account
+{
+   width: 7%;
+   height: width;
+   margin: 5px;
+   border: 5px solid yellow;
+   overflow: hidden;
+   float: left;}
+
+/*--                             Pagination              --*/
+.pagination
+{
+   margin-left: 50%;
+}
+
+.pagination a
+{
+   padding: 8px 16px;
+   border: 1px solid #ddd;
+   float: left;
+   
+   color: black;
+   text-decoration: none;}
+
+.pagination a.active-page
+{
+   background-color: #4CAF80;
+   border: 1px solid #4CAF80;
+
+   color: white;}
+
+.pagination a:hover:not(.active-page)
+{
+   background-color: #3C9F70;}
+
+.pagination a:first-child
+{
+   border-top-left-radius: 8px;
+   border-bottom-left-radius: 8px;}
+
+.pagination a:last-child
+{
+   border-top-right-radius: 8px;
+   border-bottom-right-radius: 8px;}
+
+/*--                             Modal Login             --*/
+.Modal_Login_Overlay
+{
+   z-index: 5;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0,0,0,.5);
+   position: absolute;
+   top: 0;
+   left: 0;
+   visibility: hidden;}
+
+.Modal_Login_Overlay
+{
+   z-index: 5;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0,0,0,.5);
+   position: absolute;
+   top: 0;
+   left: 0;
+   visibility: hidden;}
+
+.Modal_Login_Box
+{
+   width: 28%;
+   height: 60%;
+   padding: 2em;
+   background-color: rgba(224,224,224,1);
+   border: 5px solid rgba(224,224,224,1);
+   border-radius: 20px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   opacity: 0;
+   visibility: hidden;}
+
+.Modal_Login_Content
+{
+   z-index: 6;
+   width: 95%;
+   height: 80%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   opacity: 0;
+   visibility: hidden;}
+
+.Modal_Login_Content
+{
+   color: #565656;
+   text-align: center;
+   font-size: 35px;}
+
+   /*Target ke Modal*/ 
+#Modal:Target
+{
+   opacity: 1;
+   visibility: visible;}
+   /*Target ke Margin_Login_Box*/ 
+#Modal:Target .Modal_Login_Box
+{
+   opacity: 1;
+   visibility: visible;}
+   /*Target ke Modal_Login_Content*/ 
+#Modal:Target .Modal_Login_Content
+{
+   opacity: 1;
+   visibility: visible;}
+
+.Modal_Close
+{
+   z-index: 7;
+   position: relative;
+   top: -6%;
+   left: 96%;
+   color: #565656;
+   font-size: 40px;
+   font-weight: bold;
+   text-decoration: none;}
+
+.Input_Field_Box
+{
+   width: 90%;
+   height: 10%;
+   margin-left: 5%;
+   margin-top: 5%;
+   background: none;
+   border-bottom: 2px solid black;
+   overflow: hidden;
+
+   color: white;
+}
+
+.Input_Field_Box input
+{
+   width: 95%;
+   height: 80%;
+   margin-top: 1%;
+   margin-bottom: 5%;
+   background: none;
+   outline: none;
+   border: none;
+
+   color: #565656;
+   font-size: 18px;
+}
+
+
+
+
+.Side-Bar
+{
+   width: 20%;
+   height: 300px;
+   background-color: blue;
+   position: relative;
+   float: left;
+}
+
+.Product_List
+{
+   width: 76%;
+   height: 100%;
+   padding: 2%;
+   background-color: #AAAAAA;
+   float: left;
+   overflow: hidden;
+}
+
+.per-product
+{
+   width: 23%;
+   height: 30%;
+   min-width: 150px;
+   margin: 1%;
+   background-color: none;
+   float: left;
+   overflow: hidden;
+}
+
+.product-img
+{
+   width: 100%;
+   height: 80%;
+   background-color: white;
+   border: 5px solid #BBBBBB;
+   border-radius: 5px;
+   box-sizing: border-box;
+   overflow: hidden;
+}
+
+.prdctimg
+{
+   width: 100%;
+   height: 100%;
+   position: relative;
+   float: left;
+}
+
+.product-detail
+{
+   width: 100%;
+   height: 20%;
+   background-color: #DDDDDD;
+   border: 5px solid #BBBBBB;
+   border-radius: 5px;
+   position: relative;
+   box-sizing: border-box;
+}
+
+.product-detail a
+{
+   color: black;
+   text-decoration: none;
+   position: relative;
+}
+
+.prdctstar
+{
+   border: none;
+   width: 100px;
+   position: relative;
+}
+
+.Container
+{
+   width: 100%;
+   height: 1000px;
+   position: relative;
+   background-color: white;
+}
