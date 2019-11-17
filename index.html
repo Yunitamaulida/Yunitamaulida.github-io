@@ -2,360 +2,534 @@
 <html>
 <head>
 	<title>Thesegift</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link rel="stylesheet" href="css/Style.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
+
+	<link rel="stylesheet" type="text/css" href="css/width.css">
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
-<body style="height: auto;">
-	<div class="Full_Container">
-		<div id="Pop_up_Login" class="Pop_up_Login">
-			<div class="Login_Box">
-				<div id="closeppl" class="closeppl">
-						&times;
-					</div>
-				<div class="lbfit">
-					<div class="PPL0">
-						Login
-					</div>
-					<div class="PPL1">
-						<form action="/home.html" method="POST">
-							<div class="textfieldbox">
-								<input type="text" name="Username" placeholder="Username" required>
+<body>
+	<div class="container">
+		<div class="row">
+
+			<!--Modal_1_Pop_up_Login-->
+
+			<div class="modal_login" id="modal_login">
+				<div class="modal_loginbox">
+					<div class="close_modal" onclick="closeLoginModal()">&times;</div>
+					<div>
+						<label>Login</label>
+						<form action="login.html" method="POST">
+							<div class="textfillbox">
+								<input type="text" name="username" placeholder="username">
 							</div>
-							<div class="textfieldbox">
-								<input type="password" name="Password" placeholder="Password" required>
+							<div class="textfillbox">
+								<input type="password" name="password" placeholder="password">
 							</div>
-							<div class="textsimplybox">
-								<div class="tolupapw">
-									<a href="#">lupa password ?</a>
-								</div>
-							</div>
-							<div class="PPLogin_submit">
-								<input type="submit" name="Login" value="Login">
-							</div>
-							<div class="textsimplybox">
-								<div class="todaftar">
-									Belum punya akun ?<a href="#">Daftar</a>
-								</div>
-							</div>
+							<button>Login</button>
 						</form>
 					</div>
 				</div>
-			</div></div>
-
-		<div class="Header" style="height: 150px;">
-			<div class="Head0">
-				<div class="Head0_0">
-					<a href="#"><img src="icon/call.png"></a>
-					<a href="#">081234567890</a>
-				</div>
-				<div class="Head0_0">
-					<a href="#"><img src="icon/email.png"></a>
-					<a href="#">TheseGift@gmail.com</a>
-				</div>
-				<div class="Head0_0">
-					<a href="#"><img src="icon/ig.png"></a>
-					<a href="#">TheseGift_Shop</a>
-				</div>
 			</div>
-			<div class="Head1">
-				<a href="#"><img src="img/company.png" class="Logo_Flowersh"></a>
-			</div>
-			<div class="Head2">
-		    	<div class="Nav_Bar">
-		        	<div class="Nav-Bar-Btn">
-		        		<a href="index.html">Home</a>
-		        	</div>
-		        	<div class="Nav-Bar-Btn">
-		        		<a href="shop.html">Shop</a>
-		        	</div>
-		        	<div class="Nav-Bar-Btn">
-		            	<a href="about.html">About</a>
-		        	</div>
-		        	<div class="Nav-Bar-Btn">
-		        		<a href="blog.html">Blog</a>
-		        	</div>
-		        	<div class="Nav-Bar-Btn">
-		        		<a href="contact.html">Contact</a>
-		        	</div>
-		        	<div class="Nav-Bar-Login">
-		        		<button id="Nav-Bar-Login">Log-in</button>
-		         	</div>
-		         	<div class="Nav-Bar-Signin">
-		        		<a href="signin.html"><button id="Nav-Bar-Signin">Sign-in</button></a>
-		         	</div>
-		      	</div>
-			</div>
-			<div class="Headline">
-			</div></div>
 
-		<div class="Content_Container" style="height: 2000px;">
-			<div class="Content0" style="height: 400px;">
-				<div class="Event">
-					<div class="event0">
-						<a href="#"><img src="">Discount 50% Off</a>
-					</div>
-					<div class="event1">
-						<a href="#"><img src="">Discount Up to 70%</a>
-					</div>
-					<div class="event2">
-						<a href="#"><img src="">Buy 2 Get 1 Free</a>
-					</div>
-					<div class="event3">
-						<a href="#"><img src="">Cashback 50%</a>
-					</div>
-				</div></div>
-
-			<div class="Content1" style="height: 100px;">
-				<div class="Search_box">
-					<input type="text" name="Search" placeholder="Search" required>
-					<a href="shop.html"><img src="icon\search.png"></a>
-				</div></div>
-
-			<div class="Content2" style="height: 900px;">
-				
-				<div class="Bestseller">
-					<label>
-						Best Seller
-					</label>
-				</div>
-				<div class="Product_Grid">
-					<div class="item_product">
-						<div class="item_product_img">
-							<a href="#"><img src="img/bu (1).jpg"></a>
-						</div>
-						<div class="item_product_dtls">
-							<img src="img/star5.png">
-							<div class="bottom_dtls">
-								<div class="bottom_dtlsL">
-									<a href="#"><label>Pink Classic in Wrap</label></a>
-									<p>Rp.80.000</p>
-								</div>
-								<div class="bottom_dtlsR">
-									<a href="#"><img src="icon/wishlist.png"></a>
-								</div>
-							</div>
-						</div>
-					</div></div>
-
-				<div class="Product_Grid">
-					<div class="item_product">
-						<div class="item_product_img">
-							<a href="#"><img src="img/bo (1).jpg"></a>
-						</div>
-						<div class="item_product_dtls">
-							<img src="img/star5.png">
-							<div class="bottom_dtls">
-								<div class="bottom_dtlsL">
-									<a href="#"><label>Pink Classic in Wrap</label></a>
-									<p>Rp.80.000</p>
-								</div>
-								<div class="bottom_dtlsR">
-									<a href="#"><img src="icon/wishlist.png"></a>
-								</div>
-							</div>
-						</div>
-					</div></div>
-
-				<div class="Product_Grid">
-					<div class="item_product">
-						<div class="item_product_img">
-							<a href="#"><img src="img/k (1).jpg"></a>
-						</div>
-						<div class="item_product_dtls">
-							<img src="img/star5.png">
-							<div class="bottom_dtls">
-								<div class="bottom_dtlsL">
-									<a href="#"><label>Pink Classic in Wrap</label></a>
-									<p>Rp.80.000</p>
-								</div>
-								<div class="bottom_dtlsR">
-									<a href="#"><img src="icon/wishlist.png"></a>
-								</div>
-							</div>
-						</div>
-					</div></div>
-
-				<div class="Product_Grid">
-					<div class="item_product">
-						<div class="item_product_img">
-							<a href="#"><img src="img/k (2).jpg"></a>
-						</div>
-						<div class="item_product_dtls">
-							<img src="img/star5.png">
-							<div class="bottom_dtls">
-								<div class="bottom_dtlsL">
-									<a href="#"><label>Pink Classic in Wrap</label></a>
-									<p>Rp.80.000</p>
-								</div>
-								<div class="bottom_dtlsR">
-									<a href="#"><img src="icon/wishlist.png"></a>
-								</div>
-							</div>
-						</div>
-					</div></div>
-
-				<div class="Product_Grid">
-					<div class="item_product">
-						<div class="item_product_img">
-							<a href="#"><img src="img/bo (2).jpg"></a>
-						</div>
-						<div class="item_product_dtls">
-							<img src="img/star5.png">
-							<div class="bottom_dtls">
-								<div class="bottom_dtlsL">
-									<a href="#"><label>Pink Classic in Wrap</label></a>
-									<p>Rp.80.000</p>
-								</div>
-								<div class="bottom_dtlsR">
-									<a href="#"><img src="icon/wishlist.png"></a>
-								</div>
-							</div>
-						</div>
-					</div></div>
-
-				<div class="Product_Grid">
-					<div class="item_product">
-						<div class="item_product_img">
-							<a href="#"><img src="img/bu (5).jpg"></a>
-						</div>
-						<div class="item_product_dtls">
-							<img src="img/star5.png">
-							<div class="bottom_dtls">
-								<div class="bottom_dtlsL">
-									<a href="#"><label>Pink Classic in Wrap</label></a>
-									<p>Rp.80.000</p>
-								</div>
-								<div class="bottom_dtlsR">
-									<a href="#"><img src="icon/wishlist.png"></a>
-								</div>
-							</div>
-						</div>
-					</div></div>
-
-				<div class="Product_Grid">
-					<div class="item_product">
-						<div class="item_product_img">
-							<a href="#"><img src="img/k (3).jpg"></a>
-						</div>
-						<div class="item_product_dtls">
-							<img src="img/star5.png">
-							<div class="bottom_dtls">
-								<div class="bottom_dtlsL">
-									<a href="#"><label>Pink Classic in Wrap</label></a>
-									<p>Rp.80.000</p>
-								</div>
-								<div class="bottom_dtlsR">
-									<a href="#"><img src="icon/wishlist.png"></a>
-								</div>
-							</div>
-						</div>
-					</div></div>
-
-				<div class="Product_Grid">
-					<div class="item_product">
-						<div class="item_product_img">
-							<a href="#"><img src="img/bo (3).jpg"></a>
-						</div>
-						<div class="item_product_dtls">
-							<img src="img/star5.png">
-							<div class="bottom_dtls">
-								<div class="bottom_dtlsL">
-									<a href="#"><label>Pink Classic in Wrap</label></a>
-									<p>Rp.80.000</p>
-								</div>
-								<div class="bottom_dtlsR">
-									<a href="#"><img src="icon/wishlist.png"></a>
-								</div>
-							</div>
-						</div>
-					</div></div></div>
-
-			<div class="Content3" style="height: 200px;">
-				<div class="dispfitur">
-					<a href="#"><img src="icon\Discount.png"></a><br>
-					<a href="#">Free Shipping</a>
-					<p>Free Shipping max Rp. 20.000 - untuk daerah jawa </p>
-				</div>
-				<div class="dispfitur 0">
-					<a href="#"><img src="icon\Shipping.png"></a>
-					<br>
-					<a href="#">Gift</a>
-					<p>Jadikan sebagai hadiah untuknya</p>
-				</div>
-				<div class="dispfitur">
-					<a href="#"><img src="icon\Gift.png"></a>
-					<br>
-					<a href="#">Ship Express</a>
-					<p>Gunakan Ship Express untuk pengeriman lebih cepat</p>
-				</div></div>
+			<!--Header-->
 			
-			<div class="Content4" style="height: 400px;">
-				<div class="titleof4">
-					GALLERY
-				</div>
-				<div class="showof4">
-					<div class="showglr">Gallery 1</div>
-					<div class="showglr">Gallery 2</div>
-					<div class="showglr">Gallery 3</div>
-					<div class="showglr">Gallery 4</div>
-				</div></div></div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lr-24" id="header_fxdcntrl">
+				<div class="header" id="header">
+					<div class="col-xs-3 col-lr-5">
+						<a href="index.html"><img class="logo-1" src="img/company.png"></a>
+					</div>
+					<div class="col-xs-12 col-md-2 col-lr-8 src_ord">
+						<div class="search_box width-xs-12">
+							<div class="search_txt">
+								<form action="shop.html" method="POST">
+									<input type="text" name="search" placeholder="Search...">
+								</form>
+							</div>
+							<div class="search_btn">
+								<a href="shop.html"><img src="icon/search.png"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-9 col-md-7 col-lr-11">
+						<div class="nav_bar">
+							<div class="nav_1" id="dropdown_menu">
+								<a href="index.html" class="navbtn active-1">Home</a>
+								<a href="shop.html" class="navbtn">Shop</a>
+								<a href="about.html" class="navbtn">About</a>
+								<a href="blog.html" class="navbtn">Blog</a>
+								<a href="contact.html" class="navbtn">Contact</a>
+							</div>
 
-		<div class="Footer" style="height: 350px;">
-			<div class="Footline"></div>
-			<div class="Foot1">
-				<a href="#">TheseGift</a><br>
-				<p>Cari hadiah untuk seseorang ?<br>di thesegift aja.</p>
-				<div class="Foot1_icon">
-					<a href="#"><img src="icon/Facebook.png"></a>
-				</div>
-				<div class="Foot1_icon">
-					<a href="#"><img src="icon/Instagram.png"></a> 
-				</div>
-				<div class="Foot1_icon">
-					<a href="#"><img src="icon/Line.png"></a> 
-				</div>
-			</div>
-			<div class="Foot2">
-				<a href="#">Menu</a>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="shop.html">Shop</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</div>
-			<div class="Foot3">
-				<a href="#">Help</a>
-				<ul>
-					<li><a href="ShippingInformation.html">Shipping Information</a></li>
-					<li><a href="Return&Exchange.html">Return & Exchange</a></li>
-					<li><a href="Term&Conditions.html">Term & Conditions</a></li>
-					<li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</div>
-			<div class="Foot4">
-				<p>Have a Questions ?</p>
-				<div class="Foot4_icon">
-					<a href="#"><img src="icon/Maps-1.png"></a>
-					<a href="#">Jl. Kalimantan no 7<br>Kec. Sumbersari, Kab. Jember<br>Jawa Timur, Indonesia</a>
-				</div>
-				<div class="Foot4_icon">
-					<a href="#"><img src="icon/Call-1.png"></a>
-					<a href="#">081234567890</a>
-				</div>
-				<div class="Foot4_icon">
-					<a href="#"><img src="icon/Email-1.png"></a>
-					<a href="#">Flowersh@gmail.com</a>
-				</div>
-			</div>
-			<div class="Foot5">
-				<label>Copyright &#9400; 2019 All right reserved</label>
-			</div></div></div>
+							<div class="nav_2">
 
-	<script src="js/pop_up_login.js"></script>
+								<div class="nav_2-1" id="beforelogin">
+									<button class="nav_2-1_btn">
+										<a href="javascript:void(0);" onclick="openLoginModal()">Log-in</a>
+									</button>
+									<button class="nav_2-1_btn">
+										<a href="signin.html">Sign-in</a>
+									</button>
+								</div>
+
+								<div class="nav_2-2" id="afterlogin">
+									<a href="cart.html"><img class="accoptico" src="icon/cart.png"></a>
+									<img class="accoptico" src="icon/user.png">
+								</div>
+							</div>
+
+							<img class="menu_btn" src="icon/bars.svg" onclick="OpenDropdown()">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--Main-->
+			
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lr-24">
+				<div class="main">
+					<div class="col-xs-12">
+						<div style="width: 100%; position: relative;">
+							<div class="slidepromo-container">
+								<div class="mySlides">
+									<div class="numbertext">1 / 3</div>
+									<img src="img/glr2.jpg" style="width:100%">
+									<div class="eventtext">Promo-1</div>
+								</div>
+
+								<div class="mySlides">
+									<div class="numbertext">2 / 3</div>
+									<img src="img/glr2.jpg" style="width:100%">
+									<div class="eventtext">Promo-2</div>
+								</div>
+
+								<div class="mySlides">
+									<div class="numbertext">3 / 3</div>
+									<img src="img/glr2.jpg" style="width:100%">
+									<div class="eventtext">Promo-3</div>
+								</div>
+								<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1)">&#10095;</a>
+							</div>
+							<div style="text-align: center;">
+								<div class="dot" onclick="currentSlide(1)"></div>
+								<div class="dot" onclick="currentSlide(2)"></div>
+								<div class="dot" onclick="currentSlide(3)"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<div class="best_seller">
+							<div class="modal_buy" id="modal_buy">
+								<div class="modal_buybox">
+									<div class="close_modal" onclick="closeBuyModal()">&times;
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12" style="text-align: center;">
+								<span class="h1">
+									Best Seller
+								</span>
+							</div>
+							<div class="gridproduct">
+
+								<div class="col-xs-12 col-sm-6 col-lr-6">
+									<div class="product" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+
+										<a href="singleproduct.html">
+											<img src="img/bu (1).jpg" class="img_prod">
+										</a>
+
+										<div class="detail_prod">
+											<a href="singleproduct.html" class="prdctName">Product Name is Here</a>
+											<span class="prdctPrice">Rp. 100.000</span>
+											<div class="rating_prod">
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&star;</span>
+											</div>
+											<button class="BuyBtn" onclick="openBuyModal()">Buy</button>
+										</div>
+
+										<button class="wishlist_btn"><img src="icon/wishlistbefore.png" class="wishlist_prod" id="wishlist_prod-1"></button>
+									</div>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-lr-6">
+									<div class="product" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+
+										<a href="singleproduct.html">
+											<img src="img/bo (2).jpg" class="img_prod">
+										</a>
+
+										<div class="detail_prod">
+											<a href="singleproduct.html" class="prdctName">Product Name is Here</a>
+											<span class="prdctPrice">Rp. 100.000</span>
+											<div class="rating_prod">
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&star;</span>
+											</div>
+											<button class="BuyBtn" onclick="openBuyModal()">Buy</button>
+										</div>
+
+										<button class="wishlist_btn"><img src="icon/wishlistbefore.png" class="wishlist_prod" id="wishlist_prod-2"></button>
+									</div>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-lr-6">
+									<div class="product" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+
+										<a href="singleproduct.html">
+											<img src="img/bu (3).jpg" class="img_prod">
+										</a>
+
+										<div class="detail_prod">
+											<a href="singleproduct.html" class="prdctName">Product Name is Here</a>
+											<span class="prdctPrice">Rp. 100.000</span>
+											<div class="rating_prod">
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&star;</span>
+											</div>
+											<button class="BuyBtn" onclick="openBuyModal()">Buy</button>
+										</div>
+
+										<button class="wishlist_btn"><img src="icon/wishlistbefore.png" class="wishlist_prod" id="wishlist_prod-1"></button>
+									</div>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-lr-6">
+									<div class="product" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+
+										<a href="singleproduct.html">
+											<img src="img/bo (3).jpg" class="img_prod">
+										</a>
+
+										<div class="detail_prod">
+											<a href="singleproduct.html" class="prdctName">Product Name is Here</a>
+											<span class="prdctPrice">Rp. 100.000</span>
+											<div class="rating_prod">
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&star;</span>
+											</div>
+											<button class="BuyBtn" onclick="openBuyModal()">Buy</button>
+										</div>
+
+										<button class="wishlist_btn"><img src="icon/wishlistbefore.png" class="wishlist_prod" id="wishlist_prod-2"></button>
+									</div>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-lr-6">
+									<div class="product" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+
+										<a href="singleproduct.html">
+											<img src="img/j (1).jpg" class="img_prod">
+										</a>
+
+										<div class="detail_prod">
+											<a href="singleproduct.html" class="prdctName">Product Name is Here</a>
+											<span class="prdctPrice">Rp. 100.000</span>
+											<div class="rating_prod">
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&star;</span>
+											</div>
+											<button class="BuyBtn" onclick="openBuyModal()">Buy</button>
+										</div>
+
+										<button class="wishlist_btn"><img src="icon/wishlistbefore.png" class="wishlist_prod" id="wishlist_prod-1"></button>
+									</div>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-lr-6">
+									<div class="product" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+
+										<a href="singleproduct.html">
+											<img src="img/j (2).jpg" class="img_prod">
+										</a>
+
+										<div class="detail_prod">
+											<a href="singleproduct.html" class="prdctName">Product Name is Here</a>
+											<span class="prdctPrice">Rp. 100.000</span>
+											<div class="rating_prod">
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&star;</span>
+											</div>
+											<button class="BuyBtn" onclick="openBuyModal()">Buy</button>
+										</div>
+
+										<button class="wishlist_btn"><img src="icon/wishlistbefore.png" class="wishlist_prod" id="wishlist_prod-2"></button>
+									</div>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-lr-6">
+									<div class="product" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+
+										<a href="singleproduct.html">
+											<img src="img/k (1).jpg" class="img_prod">
+										</a>
+
+										<div class="detail_prod">
+											<a href="singleproduct.html" class="prdctName">Product Name is Here</a>
+											<span class="prdctPrice">Rp. 100.000</span>
+											<div class="rating_prod">
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&star;</span>
+											</div>
+											<button class="BuyBtn" onclick="openBuyModal()">Buy</button>
+										</div>
+
+										<button class="wishlist_btn"><img src="icon/wishlistbefore.png" class="wishlist_prod" id="wishlist_prod-1"></button>
+									</div>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-lr-6">
+									<div class="product" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+
+										<a href="singleproduct.html">
+											<img src="img/bo (4).jpg" class="img_prod">
+										</a>
+
+										<div class="detail_prod">
+											<a href="singleproduct.html" class="prdctName">Product Name is Here</a>
+											<span class="prdctPrice">Rp. 100.000</span>
+											<div class="rating_prod">
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&starf;</span>
+												<span class="ratingStar">&star;</span>
+											</div>
+											<button class="BuyBtn" onclick="openBuyModal()">Buy</button>
+										</div>
+
+										<button class="wishlist_btn"><img src="icon/wishlistbefore.png" class="wishlist_prod" id="wishlist_prod-2"></button>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lr-24">
+						<div class="feature">
+							<div class="col-xs-12 col-md-4 col-lr-8">
+								<div class="fbox">
+									<a href="#"><img src="icon/f1.png" class="fi1"></a>
+								</div>
+								<div class="ftxt">
+									<a href="#">Free Shipping</a>
+									<p>Free Shipping max Rp. 20.000 - untuk daerah jawa </p>
+								</div>
+							</div>
+							<div class="col-xs-12 col-md-4 col-lr-8">
+								<div class="fbox">
+									<a href="#"><img src="icon/f2.png" class="fi2"></a>
+								</div>
+								<div class="ftxt">
+									<a href="#">Gift</a>
+									<p>Free Shipping max Rp. 20.000 - untuk daerah jawa </p>
+								</div>
+							</div>
+							<div class="col-xs-12 col-md-4 col-lr-8">
+								<div class="fbox">
+									<a href="#"><img src="icon/f3.png" class="fi3"></a>
+								</div>
+								<div class="ftxt">
+									<a href="#">Ship Express</a>
+									<p>Free Shipping max Rp. 20.000 - untuk daerah jawa </p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lr-24">
+						<div class="lightbox-container">
+							<div class="gallerytxt">
+								<div> Gallery </div>
+							</div>
+							<div class="gallerycontent">
+								<div class="col-xs-12 col-sm-6 col-md-3 col-lr-6">
+									<div class="glrone">
+										<div class="glrone_img">
+											<img src="img/bo (1).jpg">
+										</div>
+										<div class="glrone_zoom">
+											<img src="icon/ig.png">
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-3 col-lr-6">
+									<div class="glrone">
+										<div class="glrone_img">
+											<img src="img/bu (3).jpg">
+										</div>
+										<div class="glrone_zoom">
+											<img src="icon/ig.png">
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-3 col-lr-6">
+									<div class="glrone">
+										<div class="glrone_img">
+											<img src="img/k (2).jpg">
+										</div>
+										<div class="glrone_zoom">
+											<img src="icon/ig.png">
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-3 col-lr-6">
+									<div class="glrone">
+										<div class="glrone_img">
+											<img src="img/k (4).jpg">
+										</div>
+										<div class="glrone_zoom">
+											<img src="icon/ig.png">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--Footer-->
+
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lr-24">
+				<div class="footer">
+					<div class="col-xs-12 col-sm-12 col-md-3">
+						<div class="ft_1">
+							<a href="#">TheseGift</a><br>
+							<p>Cari hadiah untuk seseorang ?<br>di thesegift aja.</p>
+							<div class="Foot1_icon">
+								<a href="#"><img src="icon/Facebook.png"></a>
+							</div>
+							<div class="Foot1_icon">
+								<a href="#"><img src="icon/Instagram.png"></a> 
+							</div>
+							<div class="Foot1_icon">
+								<a href="#"><img src="icon/Line.png"></a> 
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-3">
+						<div class="ft_2">
+							<a href="#">Menu</a>
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="shop.html">Shop</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-3">
+						<div class="ft_3">
+							<a href="#">Help</a>
+							<ul>
+								<li><a href="ShippingInformation.html">Shipping Information</a></li>
+								<li><a href="Return&Exchange.html">Return & Exchange</a></li>
+								<li><a href="Term&Conditions.html">Term & Conditions</a></li>
+								<li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-3">
+						<div class="ft_4">
+							<p>Have a Questions ?</p>
+							<div class="Foot4_icon">
+								<a href="#"><img src="icon/Maps-1.png"></a>
+								<a href="#">Jl. Kalimantan no 7<br>Kec. Sumbersari, Kab. Jember<br>Jawa Timur, Indonesia</a>
+							</div>
+							<div class="Foot4_icon">
+								<a href="#"><img src="icon/Call-1.png"></a>
+								<a href="#">081234567890</a>
+							</div>
+							<div class="Foot4_icon">
+								<a href="#"><img src="icon/Email-1.png"></a>
+								<a href="#">Flowersh@gmail.com</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lr-24">
+						<div class="ft_5">
+							Copyright ©2019 All rights reserved
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+	
+	<script type="text/javascript" src="js/js.js"></script>
+	<script type="text/javascript" src="js/towishlist.js"></script>
+
+	<script type="text/javascript">
+		var slideIndex = 1;
+
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			if (n > slides.length) 	{slideIndex = 1}    
+			if (n < 1) 				{slideIndex = slides.length}
+
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+		}
+	</script>
+
+	<script type="text/javascript">
+        AOS.init();
+    </script>
 </body>
 </html>
